@@ -1,3 +1,4 @@
+
 <div align="center">
   <h1><strong>LightDM Neon Theme</strong></h1>
   <p>
@@ -16,9 +17,9 @@
   </p>
 </div>
 
-![Splashscreen](./docs/splash.jpg)
-![User Selection](./docs/users.jpg)
-![Password Prompt](./docs/password.jpg)
+![Splashscreen](./docs/splash.png)
+![User Selection](./docs/setting.png)
+![Password Prompt](./docs/password.png)
 
 ## Make it your own
 You can customize the theme to your own preferences.
@@ -81,7 +82,9 @@ make dev
 See [CONTRIBUTING.md](https://github.com/hertg/lightdm-neon/blob/main/CONTRIBUTING.md)
 
 ## Credits
+ORIGNIAL: [hertg/lightdm-neon](https://github.com/hertg/lightdm-neon/)
 See [CREDITS.md](https://github.com/hertg/lightdm-neon/blob/main/CREDITS.md)
+and  YE THU SOE <3
 
 ## Links
 - [Building a LightDM Webkit Greeter Theme](https://www.chathandriehuys.com/blog/posts/2021/01/building-a-lightdm-webkit-greeter-theme/) (chathandriehuys.com)
@@ -89,3 +92,4 @@ See [CREDITS.md](https://github.com/hertg/lightdm-neon/blob/main/CREDITS.md)
 - [lightdm-webkit2-greeter](https://github.com/antergos/web-greeter) (github.com)
 - [lightdm-webkit2-theme-reactive](https://github.com/gitneeraj/lightdm-webkit2-theme-reactive) (github.com)
 - [nody-greeter](https://github.com/JezerM/nody-greeter)
+
