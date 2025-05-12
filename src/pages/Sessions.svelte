@@ -19,6 +19,7 @@
         "elementary",
         "enlightenment",
         "gnome",
+        "gos",
         "i3-with-shmlog",
         "i3",
         "liri",

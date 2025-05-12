@@ -7,7 +7,7 @@
     import Radio from "../components/Radio.svelte";
     import Switch from "../components/Switch.svelte";
     import { themeSettings } from "../store/settings";
-    
+
     const fontOptions: RadioOption[] = [
         {value: "Neonderthaw", text: "Neonderthaw", icon: "Typography24"},
         {value: "Neoneon",text: "Neoneon",icon: "Pencil24"},
@@ -15,7 +15,9 @@
         {value: "Higher Monday",text: "Higher Monday",icon: "Pencil24"},
         {value: "Selfie",text: "Selfie",icon: "Pencil24"},
         {value: "Hastron",text: "Hastron",icon: "Pencil24"},
-        {value: "Neon Sans",text: "Neon Sans",icon: "Pencil24"}
+        {value: "Neon Sans",text: "Neon Sans",icon: "Pencil24"},
+        {value: "Exo 2",text: "Exo 2",icon: "Pencil24"},
+        {value: "Carbon",text: "Carbon",icon: "Pencil24"}
     ]
 
     const colorCallback = (e: CustomEvent) => {

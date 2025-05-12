@@ -7,7 +7,9 @@ export enum SignFont {
     HigherMonday = "Higher Monday",
     Selfie = "Selfie",
     Hastron = "Hastron",
-    NeonSans = "Neon Sans"
+    NeonSans = "Neon Sans",
+    Exo2 = "Exo 2",
+    Carbon = "Carbon"
 }
 
 export class ThemeSettings {
@@ -30,13 +32,13 @@ const initialSettings: ThemeSettings = {
     background_blur: true,
     skip_splashscreen: false,
     sign: {
-        text: "hello neon",
-        font: SignFont.Neonderthaw,
+        text: "GalacticOS",
+        font: SignFont.Carbon,
         flicker: false,
         show_clock: false,
     },
     colors: {
-        accent_color: '#FF008E'
+        accent_color: '#2B2B2B'
     }
 }
 

@@ -3,22 +3,29 @@
     import { backgroundBlur } from "../store/runtime";
     import { themeSettings } from "../store/settings";
 
-    let defaultImage: string = "assets/img/backgrounds/arcade.jpg";
-    $: image = $themeSettings.background_image !== null ? $themeSettings.background_image : defaultImage;
+    let defaultImage: string = "assets/img/backgrounds/gos_wallpaper.png";
+    $: image =
+        $themeSettings.background_image !== null
+            ? $themeSettings.background_image
+            : defaultImage;
     const timeout: number = 150;
 
-    onMount(async() => {
+    onMount(async () => {
         setTimeout(() => {
-                $backgroundBlur = true;
+            $backgroundBlur = true;
         }, timeout);
     });
 </script>
 
-<div id="background" class:blurred={$themeSettings.background_blur && $backgroundBlur} style="--bg-image: url('{image}')"></div>
+<div
+    id="background"
+    class:blurred={$themeSettings.background_blur && $backgroundBlur}
+    style="--bg-image: url('{image}')"
+></div>
 
 <style>
     #background {
-		@apply h-screen w-screen bg-cover bg-center absolute;
+        @apply h-screen w-screen bg-cover bg-center absolute;
         height: calc(100% + 50px);
         width: calc(100% + 50px);
         left: -25px;
@@ -39,4 +46,3 @@
         opacity: 1;
     }
 </style>
-
