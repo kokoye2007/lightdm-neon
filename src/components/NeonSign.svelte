@@ -10,7 +10,11 @@
     export let font: string = "Neonderthaw"
 	export let size: string = "8rem";
 
+	let gosLogo: string = "assets/img/gOSLogo.png";
+	let gosLock: string = "assets/img/gOSLock.png";
+
     $: mixed = blend(color, '#ffffff', 0.75)
+
 
 	const getTime = () => {
         // changing it to lower-case because the uppercase AM/PM looks bad with some "neon" fonts
@@ -24,10 +28,16 @@
 </script>
 
 <span class:flicker style="--sign-color: {color}; --mixed-color: {mixed}; --sign-font: {font}; --size: {size};">
-	{#if showClock}
-		{time}
+	{#if gosLogo !== null}
+		<img src={gosLogo} alt="logo" />
+		<br>
+		<img src={gosLock} alt="lock" style="width: 30%; margin: 0 auto;" />
 	{:else}
-    	{text}
+		{#if showClock}
+			{time}
+		{:else}
+			{text}
+		{/if}
 	{/if}
 </span>
 
